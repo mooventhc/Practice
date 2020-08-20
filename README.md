@@ -45,8 +45,27 @@ Estimate
 
 Of all the registered Restaurants in zomato, How many are Accepting online orders and how many are not accepting. from the graph below you can understand that we have almost 30,000 Restaurants in Bangalore that Accepts online orders through zomato and Almost of 20,000 are not accpeting any online orders through zomato.
 
+                                          Cuisines
+                                          
+  With the help of the varities provided by the restrants we are going to analyse it with the word cloud to get a clear picutre of the restraunts.
+  
+  
+### Sentimental Analysis:
+
+- Using nltk package - stop words, regex cleaned the reviews
+- Using sentiment analysis package - analysed the reviews and the compound score
+- Filled the rating with the help of compound scores
+
 ### Feature Engineering:
 
+Filling_Null_Values:
+
+- Dish_liked(dropped) -->as it contains more than 60% of null values.
+- Cuisines            --> With the help of the word cloud from the menu filled with the most famous cuisines
+- Rating              --> Filled using the reviews (Snetiment Analysis)
+                          Assumption NEW starts lets be good as they are trying new
+                          Compound_Score with score greater than 0.2 will be given positive with a rating as 4
+                          Lesser than 0.2 is given negative with a rating as 3
 
 ### Selection :
 
@@ -57,6 +76,11 @@ Backward Elimination: We start with all the features and removes the least signi
 Selected Features :['address', 'online_order', 'book_table', 'rate', 'votes', 'location', 'rest_type', 'cuisines', 'reviews', 'menu', 'type', 'city']
 
 Dropped on Purpose: URL,Phone_number(Cannot be used for analysis as it is all unique),dish_liked(more than 50%null values)
+
+### Processing:
+
+- Getting dummies is not going to work here as we have columns with address,name,menu
+- Using factorize with reference to one of the kaggle kernels(its been verified with its better performance than dummies creation)
 
 
 ### Modeling:
