@@ -19,8 +19,11 @@ Estimate
                                           Restaurant Name:-
 - We have a Feature/Column called Name that says about all the Restaurants that tie/partnered with zomato in Bangalore. We have several Restaurants few named like Cafe Coffee Day, Onesta, Just Bake, Kranti sweets and more.
 
+ <img src= "image/Restraunts.PNG" width='400'>
 
 - Bar plot for top 20 restaurants with their count from the above graph, we can see that we almost have 100 restaurants for the Franchise of Cafe Coffee Day.
+
+ <img src= "image/Restraunts1.PNG" width='400'>
 
 - Bangalore a IT hub everone needs a quick bites (reallly sad)
 
@@ -28,8 +31,12 @@ Estimate
   
   - Most of them are spending on zomato food within the price range of 200-1000.
   
-                                      Briyani Analysis
+   <img src= "image/Cost_of_two.PNG" width='400'>
+
+                                       Briyani Analysis
                                       
+    <img src= "image/Briyani1.PNG" width='400'>
+
  
  Inference:
 
@@ -45,11 +52,14 @@ Estimate
 
 Of all the registered Restaurants in zomato, How many are Accepting online orders and how many are not accepting. from the graph below you can understand that we have almost 30,000 Restaurants in Bangalore that Accepts online orders through zomato and Almost of 20,000 are not accpeting any online orders through zomato.
 
+   <img src= "image/Online Orders.PNG" width='400'>
+
                                           Cuisines
                                           
   With the help of the varities provided by the restrants we are going to analyse it with the word cloud to get a clear picutre of the restraunts.
   
-  
+   <img src= "image/Menu.PNG" width='400'>
+
 ### Sentimental Analysis:
 
 - Using nltk package - stop words, regex cleaned the reviews
@@ -87,6 +97,9 @@ Dropped on Purpose: URL,Phone_number(Cannot be used for analysis as it is all un
 
 Models- LinearRegression,RandomForestRegressor,GradientBoostingRegressor,AdaBoostRegressor
 Performance_metrics- r2_score,accuracy_score
+
+   <img src= "image/Model.PNG" width='400'>
+
 
 #### Overall RandomForest and XGboost are performing best in the prediction
 
